@@ -7,7 +7,7 @@ if (!admin.apps.length) {
     Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT!, "base64").toString()
   );
 
-  admin.initializeApp({
+ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
   });
 }
